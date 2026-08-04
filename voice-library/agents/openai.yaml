@@ -1,0 +1,4 @@
+interface:
+  display_name: "VoGen Voice Library"
+  short_description: "Find named VoGen voices for speech generation."
+  default_prompt: "Use $voice-library to find a suitable named VoGen voice for this narration."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "VoGen API Key Setup"
+  short_description: "Configure and validate VoGen credentials safely."
+  default_prompt: "Use $setup-api-key to configure and validate my VoGen API key safely."

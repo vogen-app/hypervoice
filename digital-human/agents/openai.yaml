@@ -1,0 +1,4 @@
+interface:
+  display_name: "VoGen Digital Human"
+  short_description: "Create talking-avatar videos from portraits and audio."
+  default_prompt: "Use $digital-human to turn this portrait and script into a talking avatar video."

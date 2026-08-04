@@ -1,0 +1,4 @@
+interface:
+  display_name: "VoGen Voice Cloning"
+  short_description: "Create a private voice from authorized reference audio."
+  default_prompt: "Use $voice-cloning to create a private VoGen voice from my authorized recording."

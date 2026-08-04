@@ -1,0 +1,4 @@
+interface:
+  display_name: "VoGen Emotion Library"
+  short_description: "Find named VoGen emotion references for expressive speech."
+  default_prompt: "Use $emotion-library to find a suitable named emotion reference for this narration."

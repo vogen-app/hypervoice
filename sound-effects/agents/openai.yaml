@@ -1,0 +1,4 @@
+interface:
+  display_name: "VoGen Sound Effects"
+  short_description: "Search and download VoGen sound effects."
+  default_prompt: "Use $sound-effects to find and download a fitting sound effect for this scene."

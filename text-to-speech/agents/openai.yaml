@@ -1,0 +1,4 @@
+interface:
+  display_name: "VoGen Text to Speech"
+  short_description: "Stream natural speech audio from text with VoGen."
+  default_prompt: "Use $text-to-speech to turn this script into a streamed MP3 file."
