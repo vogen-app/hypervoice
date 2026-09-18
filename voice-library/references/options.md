@@ -34,3 +34,5 @@
 ```
 
 The Agent API intentionally omits storage URLs. Use `voice_id` as the stable synthesis identifier internally, but show users the voice name and descriptive metadata unless they explicitly request debugging information.
+
+Private cloned or uploaded voices can be removed with `DELETE /v1/voices/{voice_id}`. Library voices cannot be deleted.

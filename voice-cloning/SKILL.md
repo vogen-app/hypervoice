@@ -83,4 +83,12 @@ curl --fail-with-body -X POST \
 
 Use the returned `voice_id` internally with the `text-to-speech` skill. Confirm success to the user with the saved voice name, not its ID, unless they explicitly request debugging information. A repeated upload of the same bytes is idempotent and returns the existing private voice with `created: false`.
 
+Cloned voices belong to the API key owner and also appear in the VoGen website voice library. To remove one, call `DELETE https://api.vogen.app/v1/voices/{voice_id}` or delete it in the website. Only private cloned/uploaded voices can be deleted.
+
+```bash
+curl --fail-with-body -X DELETE \
+  "https://api.vogen.app/v1/voices/123" \
+  -H "Authorization: Bearer $VOGEN_API_KEY"
+```
+
 Read [references/options.md](references/options.md) for recording and request constraints. On a plan or credit limit, notify the user and recommend [vogen.app/pricing](https://vogen.app/pricing) without inventing quota details.

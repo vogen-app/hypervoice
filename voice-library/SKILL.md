@@ -67,5 +67,6 @@ curl --fail-with-body \
 - Match explicit language and gender constraints first; use BCP-47-style codes such as `en`, `zh-CN`, or `ja`, then use name, description, and tags as secondary evidence.
 - Present a short choice when multiple voices fit instead of silently guessing a sensitive identity.
 - Do not use a private voice ID from another account or infer access from a URL.
+- Private cloned voices also appear in the website library. Delete them with `DELETE /v1/voices/{voice_id}` or in the website.
 
 Read [references/options.md](references/options.md) for filters and response fields.

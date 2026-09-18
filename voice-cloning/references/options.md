@@ -34,3 +34,16 @@
 ```
 
 Common errors: `UNSUPPORTED_AUDIO_FORMAT`, `INVALID_AUDIO_FILE`, `EMPTY_AUDIO`, `AUDIO_TOO_LARGE`, `VOICE_LIMIT_EXCEEDED`, `INVALID_API_KEY`.
+
+## Delete
+
+`DELETE https://api.vogen.app/v1/voices/{voice_id}` removes a private cloned or uploaded voice owned by the API key. Library voices cannot be deleted. The response is:
+
+```json
+{
+  "voice_id": 123,
+  "deleted": true
+}
+```
+
+Common errors: `VOICE_NOT_FOUND`, `VOICE_FORBIDDEN`, `VOICE_NOT_DELETABLE`, `INVALID_API_KEY`.
